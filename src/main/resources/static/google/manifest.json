@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "密码管理器",
+  "version": "1.0",
+  "description": "一个有趣的密码管理器",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "login.html",
+    "default_icon": {
+      "16": "charge_battery.svg",
+      "48": "charge_battery.svg",
+      "128": "charge_battery.svg"
+    }
+  },
+  "icons": {
+    "16": "charge_battery.svg",
+    "48": "charge_battery.svg",
+    "128": "charge_battery.svg"
+  }
+}

@@ -1,0 +1,161 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleButton {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e161e;
+    color: #c6d4df;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    background-color: #2a475e;
+    color: #c6d4df;
+    padding: 10px;
+    margin: 0;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+    width: 100%;
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #66c0f4;
+    border: none;
+    color: #0e161e;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #82d3f6;
+    animation: scaleButton 0.5s ease-out infinite;
+}
+
+/* New styles for view_password.html */
+.user-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.item {
+    background-color: #2a475e;
+    padding: 16px;
+    border-radius: 4px;
+    width: calc(50% - 8px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.edit,
+.delete,
+.copy {
+    background-color: #66c0f4;
+    border: none;
+    color: #0e161e;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 16px;
+}
+
+.edit:hover,
+.delete:hover,
+.copy:hover {
+    background-color: #82d3f6;
+}
+
+.edit {
+    right: 16px;
+}
+
+.delete {
+    right: 60px;
+}
+
+.copy {
+    right: 104px;
+}
+
+/* Styles specific to submit_password.html */
+form input {
+    width: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#goto-options {
+    margin-top: 10px;
+}
+
+.item-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit,
+.delete,
+.copy {
+    flex: 1;
+    margin: 0 5px;
+}
