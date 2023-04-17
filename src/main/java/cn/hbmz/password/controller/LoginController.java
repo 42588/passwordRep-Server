@@ -57,7 +57,7 @@ public class LoginController {
         resultComment.setState(SUCCESS);
         return resultComment;
     }
-
+//test
     /**
      * 注册账户，注册成功返回 1
      * @param role
